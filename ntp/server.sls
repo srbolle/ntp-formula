@@ -17,7 +17,7 @@ ntpd_conf:
 ntpd:
   service.running:
     - name: {{ ntp.service }}
-    - enable: True
+    - enable: False
     - require:
       - pkg: ntp
 {% if ntpd_conf_src %}
